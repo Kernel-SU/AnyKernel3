@@ -36,6 +36,7 @@ kernel_version=$(cat /proc/version | awk -F '-' '{print $1}' | awk '{print $3}')
 case $kernel_version in
     5.1*) ksu_supported=true ;;
     6.1*) ksu_supported=true ;;
+    6.6) ksu_supported=true ;;
     *) ksu_supported=false ;;
 esac
 
